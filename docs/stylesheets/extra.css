@@ -1,0 +1,90 @@
+[data-md-color-scheme="fet-color-light"] {
+    --md-hue: 127;
+    
+    /* 动态调参系统 */
+    --md-saturation: 98%;
+    --md-lightness: 20%;
+    
+    /* 背景层次体系 */
+    --md-default-bg-color: hsl(var(--md-hue), var(--md-saturation), 97%); 
+    --md-default-bg-color--light: hsl(var(--md-hue), 15%, 92%);
+    --md-default-bg-color--lighter: hsl(var(--md-hue), 15%, 88%);
+    --md-default-bg-color--lightest: hsl(var(--md-hue), 15%, 84%);
+    
+    /* 主品牌色系 */
+    --md-primary-fg-color: hsl(var(--md-hue), var(--md-saturation), var(--md-lightness)); /* 活力橙 */
+    --md-primary-fg-color--light: hsl(var(--md-hue), var(--md-saturation), calc(var(--md-lightness) + 8%));
+    --md-primary-fg-color--dark: hsl(var(--md-hue), var(--md-saturation), calc(var(--md-lightness) - 12%));
+    
+    /* 交互色系 */
+    --md-accent-fg-color: hsl(207, 89%, 42%);  /* 科技蓝作为对比色 */
+    --md-accent-bg-color: hsl(var(--md-hue), 20%, 95%);
+    
+    /* 代码区块 */
+    --md-code-bg-color: hsl(var(--md-hue), 20%, 98%);  /* 极浅橙白 */
+    --md-code-fg-color: hsl(var(--md-hue), 85%, 30%);  /* 深橙棕 */
+    
+    /* 文字体系 */
+    --md-default-fg-color: hsl(27, 35%, 15%);  /* 深咖啡色 */
+    --md-typeset-a-color: var(--md-primary-fg-color);
+    
+    /* 组件状态 */
+    --md-footer-bg-color: hsl(var(--md-hue), 15%, 90%);
+}
+
+[data-md-color-scheme="fet-color-dark"] {
+    --md-hue: 127;
+
+    /* 暗色动态参数 */
+    --md-saturation: 92%;  /* 提高饱和度防浑浊 */
+    --md-lightness: 10%;   /* 降低明度适应暗背景 */
+    
+    /* 背景层次体系 */
+    --md-default-bg-color: hsl(var(--md-hue), 15%, 12%);  /* 深岩灰 */
+    --md-default-bg-color--light: hsl(var(--md-hue), 15%, 18%);
+    --md-default-bg-color--lighter: hsl(var(--md-hue), 15%, 22%);
+    --md-default-bg-color--lightest: hsl(var(--md-hue), 15%, 26%);
+    
+    /* 主品牌色暗色适配 */
+    --md-primary-fg-color: hsl(var(--md-hue), var(--md-saturation), calc(var(--md-lightness) + 5%)); 
+    --md-primary-fg-color--light: hsl(var(--md-hue), var(--md-saturation), calc(var(--md-lightness) + 15%));
+    
+    /* 交互色暗色优化 */
+    --md-accent-fg-color: hsl(207, 85%, 65%);  /* 提亮科技蓝 */
+    --md-accent-bg-color: hsl(var(--md-hue), 15%, 20%);
+    
+    /* 代码区块暗色模式 */
+    --md-code-bg-color: hsl(var(--md-hue), 25%, 15%);  /* 深石板色 */
+    --md-code-fg-color: hsl(var(--md-hue), 55%, 80%);  /* 柔光橙 */
+    
+    /* 文字体系 */
+    --md-default-fg-color: hsl(27, 25%, 90%);  /* 暖月光白 */
+    --md-default-fg-color--light: hsl(27, 25%, 90%);
+    --md-typeset-a-color: hsl(var(--md-hue), 85%, 70%);  /* 高亮橙 */
+
+    --md-typeset-color: var(--md-default-fg-color);
+  /* --md-typeset-a-color: var(--md-primary-fg-color); */
+    --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);
+    --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 94%, 0.2);
+    --md-typeset-kbd-border-color: hsla(var(--md-hue), 15%, 14%, 1);
+    --md-typeset-table-color: hsla(var(--md-hue), 75%, 95%, 0.12);
+    --md-typeset-table-color--light: hsla(var(--md-hue), 75%, 95%, 0.035);
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-admonition-bg-color: var(--md-default-bg-color);
+    --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
+    --md-footer-bg-color--dark: hsla(var(--md-hue), 15%, 10%, 1);
+    
+    /* 组件状态增强 */
+    --md-footer-bg-color: hsl(var(--md-hue), 15%, 8%);
+    --md-shadow-z1: 0 0.2rem 0.5rem rgba(0,0,0,0.4);
+}
+
+[data-md-color-scheme="fet-color-light"] img[src$="#only-dark"],
+[data-md-color-scheme="fet-color-light"] img[src$="#gh-dark-mode-only"] {
+  display: none; /* Hide dark images in light mode */
+}
+
+[data-md-color-scheme="fet-color-dark"] img[src$="#only-light"],
+[data-md-color-scheme="fet-color-dark"] img[src$="#gh-light-mode-only"] {
+  display: none; /* Hide light images in dark mode */
+}
