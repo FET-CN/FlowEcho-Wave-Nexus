@@ -8,7 +8,7 @@ theme:
   custom_dir: overrides
   features:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    # - navigation.instant
+    - navigation.instant
     #- header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
@@ -28,6 +28,8 @@ theme:
     - content.action.view
     - content.code.annotate
     - navigation.indexes
+    - navifation.instant.progress # 页面加载进度条
+    - navifation.tracking # 锚点跟踪
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: fet-color-light
@@ -42,6 +44,8 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
 
 markdown_extensions:
   - admonition
@@ -50,6 +54,7 @@ markdown_extensions:
   - md_in_html
 
 plugins:
+  - search
   - glightbox
   - markdownextradata
   - blog:
@@ -80,6 +85,7 @@ extra:
     name: W-Can1425
     web: https://can1425.flowecho.org/
     github: https://github.com/Can1425/
+    gitee: https://gitee.com/Can1425/
   LP:
     name: LP_OVER
     web: /
@@ -92,6 +98,7 @@ extra:
     name: 我叫以赏
     web: https://lovepikachu.top/
     github: https://github.com/wojiaoyishang/
+    gitee: https://gitee.com/wojiaoyishang/
   CycleBai:
     name: Cycle Bai
     web: /
@@ -104,10 +111,16 @@ extra:
     name: emofalling
     web: /
     github: https://github.com/emofalling
+  social:
+      -   icon: material/email
+          link: mailto:<can1425@dingtalk.com>
+          name: 邮箱地址
+
+copyright: Copyright 2025 FlowEcho Develop Team All RightsReserved.
 
 nav:
-  - 主页:
-      - index.md
+  - 成员:
+      - members/index.md
   - 博客:
       - blog/index.md
   - 知识库:
@@ -116,3 +129,6 @@ nav:
       - history/index.md
   - 讨论:
       - discussion/index.md
+
+repo_url: https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus
+repo_name: FlowEcho-Wave-Nexus

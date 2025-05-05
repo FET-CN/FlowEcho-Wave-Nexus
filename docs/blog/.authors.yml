@@ -1,0 +1,7 @@
+authors:
+    Can1425:
+        name: W-Can1425        # Author name
+        description: FlowEcho 创始人、中央决策小组成员 # Author description
+        avatar: ./images/can1425.png         # Author avatar
+        # slug: url           # Author profile slug
+        url: https://can1425.flowecho.org   # Author website URL
