@@ -124,7 +124,10 @@ nav:
   - 博客:
       - blog/index.md
   - 知识库:
-      - wiki/index.md
+      - hPy v2开发:
+        - 固件编译教程: "wiki/hPy_v2/FirmwareCompile.md"
+        - mPy1.12 QSTR文档翻译: "wiki/hPy_v2/Docs_QSTR.md"
+        - 集成调试器: "wiki/hPy_v2/IntegratedDebugger.md"
   - 历史资料:
       - history/index.md
   - 讨论:
