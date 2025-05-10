@@ -112,12 +112,16 @@ extra:
     web: /
     github: https://github.com/emofalling
   social:
-      -   icon: material/email
-          link: mailto:<can1425@dingtalk.com>
-          name: 邮箱地址
+    - icon: material/email
+      link: mailto:<can1425@dingtalk.com>
+      name: E-Mail
+    - icon: material/github
+      link: https://github.com/FlowEcho-Develop-Team
+      name: Github
 
-copyright: Copyright 2025 FlowEcho Develop Team All RightsReserved.
-
+copyright: |
+  Copyright 2025 FlowEcho Develop Team All RightsReserved.
+  Code licensed under the <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/LICENSE">MIT License</a>. Content licensed under <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/docs/LICENSE">CC BY-SA 4.0</a>.
 nav:
   - 成员:
       - members/index.md
