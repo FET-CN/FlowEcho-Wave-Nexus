@@ -1,4 +1,8 @@
-# mPy字符串驻留
+# MicroPython 1.12 QSTR 文档翻译
+
+!!! note
+	由 {{Gxxk.name}} 撰写
+
 > 原文 `interning`本意为 实习 此处译为驻留.
 
 ---

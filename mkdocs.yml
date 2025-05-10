@@ -52,6 +52,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - md_in_html
+  - attr_list
 
 plugins:
   - search
@@ -128,10 +129,11 @@ nav:
   - 博客:
       - blog/index.md
   - 知识库:
-      - hPy v2开发:
-        - 固件编译教程: "wiki/hPy_v2/FirmwareCompile.md"
-        - mPy1.12 QSTR文档翻译: "wiki/hPy_v2/Docs_QSTR.md"
-        - 集成调试器: "wiki/hPy_v2/IntegratedDebugger.md"
+      - wiki/index.md
+      - HandPy V2:
+        - 固件编译: "wiki/HandPy_V2/FirmwareCompile.md"
+        - MicroPython 1.12 QSTR 文档翻译: "wiki/HandPy_V2/Docs_QSTR.md"
+        - 集成调试器: "wiki/HandPy_V2/IntegratedDebugger.md"
   - 历史资料:
       - history/index.md
   - 讨论:
