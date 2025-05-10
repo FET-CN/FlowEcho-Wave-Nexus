@@ -34,10 +34,8 @@ jobs:
       - name: Build step
         run: "mkdocs build"
 
-      - name: Verify site directory contents
-        run: |
-          ls -l site/
-          pwd
+      - name: Copy files
+        run: "mv scripts/main.ts site/main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
