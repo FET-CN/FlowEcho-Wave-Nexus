@@ -117,12 +117,12 @@ extra:
       link: mailto:<can1425@dingtalk.com>
       name: E-Mail
     - icon: material/github
-      link: https://github.com/FlowEcho-Develop-Team
+      link: https://github.com/FET-CN
       name: Github
 
 copyright: |
   Copyright (c) 2025 FlowEcho Develop Team
-  Code licensed under the <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/LICENSE">GPL v3 License</a>. Content licensed under <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/docs/LICENSE">CC BY-SA 4.0</a>.
+  Code licensed under the <a href="https://github.com/FET-CN/FlowEcho-Wave-Nexus/blob/main/LICENSE">GPL v3 License</a>. Content licensed under <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/docs/LICENSE">CC BY-SA 4.0</a>.
 nav:
   - 成员:
       - members/index.md
@@ -139,5 +139,5 @@ nav:
   - 讨论:
       - discussion/index.md
 
-repo_url: https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus
+repo_url: https://github.com/FET-CN/FlowEcho-Wave-Nexus
 repo_name: FlowEcho-Wave-Nexus
