@@ -40,7 +40,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "victorzhang-flowecho-wa-51"
+          project: "victorzhang-flowecho-wa-74"
           entrypoint: "site/main.ts"
           root: ""
           
