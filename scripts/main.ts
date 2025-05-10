@@ -18,6 +18,7 @@ const mimeTypes: { [key: string]: string } = {
   ".gif": "image/gif",
   ".svg": "image/svg+xml",
   ".txt": "text/plain",
+  ".webp": "image/webp",
   // 添加更多你需要的 MIME 类型
 };
 

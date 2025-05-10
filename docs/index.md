@@ -5,8 +5,8 @@ title: 主页
 </br>
 
 <p align="center" markdown="span">
-    <img align="center" width="100" src="./images/logo-light.png#only-light">
-    <img align="center" width="100" src="./images/logo-dark.png#only-dark">
+    <img align="center" width="100" src="./images/logo-light.webp#only-light">
+    <img align="center" width="100" src="./images/logo-dark.webp#only-dark">
     </br>
     </br>
     <h1 align="center">FlowEcho Develop Team</h1>

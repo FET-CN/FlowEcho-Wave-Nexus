@@ -3,8 +3,8 @@ site_description: 这里是 FlowEcho 门户网站。让每一次呐喊都有回�
 theme:
   name: material
   language: zh
-  logo: images/logo-bar.png
-  favicon: images/logo-light.png
+  logo: images/logo-bar.webp
+  favicon: images/logo-light.webp
   custom_dir: overrides
   features:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
@@ -131,9 +131,10 @@ nav:
   - 知识库:
       - wiki/index.md
       - HandPy V2:
-        - 固件编译: "wiki/HandPy_V2/FirmwareCompile.md"
-        - MicroPython 1.12 QSTR 文档翻译: "wiki/HandPy_V2/Docs_QSTR.md"
-        - 集成调试器: "wiki/HandPy_V2/IntegratedDebugger.md"
+        - "wiki/HandPy_V2/FirmwareCompile.md"
+        - "wiki/HandPy_V2/Docs_QSTR.md"
+        - "wiki/HandPy_V2/IntegratedDebugger.md"
+      - "wiki/How2Contribute.md"
   - 历史资料:
       - history/index.md
   - 讨论:
