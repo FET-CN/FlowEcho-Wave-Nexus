@@ -121,7 +121,7 @@ extra:
       name: Github
 
 copyright: |
-  Copyright 2025 FlowEcho Develop Team All RightsReserved.
+  Copyright (c) 2025 FlowEcho Develop Team
   Code licensed under the <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/LICENSE">GPL v3 License</a>. Content licensed under <a href="https://github.com/FlowEcho-Develop-Team/FlowEcho-Wave-Nexus/blob/main/docs/LICENSE">CC BY-SA 4.0</a>.
 nav:
   - 成员:
