@@ -35,7 +35,7 @@ jobs:
         run: "uv sync"
 
       - name: Build
-        run: "mkdocs build"
+        run: "uv run mkdocs build"
 
       - name: Copy files
         run: "mv scripts/main.ts site/main.ts"
