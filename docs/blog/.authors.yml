@@ -6,9 +6,9 @@ authors:
         # slug: url           # Author profile slug
         url: https://can1425.flowecho.org   # Author website URL
     Frez79:
-        name: Frez79        # Author name
-        description: 马甲Gxxk_、中央决策小组成员 # Author description
-        avatar: ./images/frez79.webp         # Author avatarFrez79:
+        name: Frez79
+        description: 别名Gxxk 一名想当全栈程序员的学生
+        avatar: ./images/frez79.webp
     LP_OVER:
         name: LP_OVER        # Author name
         description: FlowEcho早期成员、中央决策小组成员 # Author description

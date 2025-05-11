@@ -16,17 +16,18 @@ FlowEcho 创始人、中央决策小组成员
 
 ---
 
-## {{Gxxk.name}}
+## {{Frez79.name}}
 
 FlowEcho 初代成员、中央决策小组成员
 
-[Github]({{Gxxk.github}})
+[Github]({{Frez79.github}})
+[LINUX DO]({{Frez79.ldo}})
 
 ## {{LP.name}}
 
 FlowEcho 初代成员、中央决策小组成员
 
-[Github]({{LP.name}})
+[Github]({{LP.github}})
 
 ## {{emofalling.name}}
 

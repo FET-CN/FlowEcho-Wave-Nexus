@@ -1,12 +1,12 @@
 # 集成调试器
 
 !!! note
-	由 {{Gxxk.name}} 撰写
+	由 {{Frez79.name}} 撰写
 
 ## 前置
 掌握hPy v2固件编译技能.
 建议使用VSCode编辑器
-对应教程：[hPy v2 固件编译教程](/wiki/hPy_v2/FirmwareCompile)
+对应教程：[hPy v2 固件编译教程](./FirmwareCompile.md)
 ## 注
 - 由于microPython的特殊性 此处将使用[Github@bobveringa/mpdb](https://github.com/bobveringa/mpdb/)作为调试器
 - 如配置文件中未定义需要开关的项 那么请直接略过该项
