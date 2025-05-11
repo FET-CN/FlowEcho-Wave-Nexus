@@ -31,6 +31,8 @@ serve(async (req: Request) => {
   const url = new URL(req.url);
   const pathname = url.pathname;
 
+  console.log("pathname: " + pathname)
+
   // 检查路径是否以 "/wave/" 开头
   if (pathname.startsWith("/wave/")) {
     // 如果以 "/wave/" 开头，则提供本地文件
