@@ -21,6 +21,8 @@
 
 #### 1.0.2 使用镜像源
 
+> PyPi镜像源设置已被写入本项目的`pyproject.toml`文件中 无需设置.
+
 ##### Github镜像源
 ```bash
 git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
@@ -30,10 +32,6 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 > 不可对Git镜像源进行push. 如需push 请恢复原有设置：
 >
 > `git config --global --unset url.https://bgithub.xyz.insteadof`
-##### PyPi镜像源
-> 此处内容仅适用于uv
-
-将值为`https://mirrors.aliyun.com/pypi/simple/`的环境变量`UV_INDEX`添加进系统即可
 
 #### 1.0.3 科学上网
 
@@ -48,10 +46,6 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 
 ### 1.1.2 安装Github Desktop
 
-> GitHub Desktop 是一个图形化界面工具 它整合了Git 可以帮助我们更方便地管理Github仓库
-
-> 笔者不太建议新手直接使用Git 除非你十分熟悉命令行操作
-
 1. 访问<https://desktop.github.com/download/> 点击图中包含`Download`字样的白色按钮以下载
 2. 运行下载下来的文件 在经过非常短的安装后将会弹出如下界面：
     ![](../images/how2contribute/ghdesktop_welcomeui.webp)
@@ -64,30 +58,16 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 
 ### 1.2 Python/mkdocs环境配置
 
-> Python 是一个跨平台的开源编程语言 它的官方版本是免费的
-
-> 笔者建议使用工具uv配置Python
-
-1. 打开Powershell 执行以下命令：
-    ```powershell
-    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-    ```
-    - 当然 你也可以这么做:
-    ```powershell
-    winget install --id=astral-sh.uv  -e
-    ```
-2. 打开Github Desktop 点击左侧`Clone`开头的按钮 在新弹出的窗口中选择`URL`
+1. 打开Github Desktop 点击左侧`Clone`开头的按钮 在新弹出的窗口中选择`URL`
     第一栏输入`https://github.com/FET-CN/FlowEcho-Wave-Nexus.git`
     第二栏点击右侧`Choose`按钮以选择一个你希望存放仓库的文件夹
     ![](../images/how2contribute/ghdesktop_clone.webp)
     最后点击Clone 等待下图界面出现
     ![](../images/how2contribute/ghdesktop_repo_latest.webp)
-3. 在上一步最后显示的窗口里按下 <kbd>Ctrl</kbd>+<kbd>`</kbd> 打开终端 输入以下命令：
-    ```powershell
-    uv venv
-    .venv\Scripts\activate
-    uv sync
-    ```
+2. 在上一步最后显示的窗口里按下 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> 打开仓库
+    进入`tools`目录 双击运行`firststep.bat`
+
+> Note: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>也是部分输入法的简繁切换快捷键
 ## 2. 文档编写
 
 ### 2.1 文档格式
@@ -158,7 +138,14 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 您可以通过`\{\{作者名(ID标记).name\}\}`来引用作者名字.
 
 您可以通过`\{\{作者名(ID标记).\[对应信息的ID\]\}\}`来引用作者`\[对应信息\]`.
-## 3. 上传文章
+
+## 3. 预览文章
+
+1. 在Github Desktop中 打开此仓库 按下 <kbd>Ctrl</kbd>+<kbd>\`</kbd> 打开命令行
+2. 使用命令`uv run mkdocs serve` 开启预览服务
+3. 在<localhost:8000>预览您的文章.
+
+## 4. 上传文章
 
 > 作为一般用户 您可能没有足够的权限进行push操作 此时 您可以通过 **PR(Pull Request)** 解决这一问题：
 
