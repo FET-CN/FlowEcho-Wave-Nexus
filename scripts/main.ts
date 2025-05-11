@@ -31,6 +31,8 @@ serve(async (req: Request) => {
   const url = new URL(req.url);
   const pathname = url.pathname;
 
+  console.log("pathname: " + pathname)
+
   // 检查路径是否以 "/wave/" 开头
   if (pathname.startsWith("/wave/")) {
     // 如果以 "/wave/" 开头，则提供本地文件
@@ -43,7 +45,6 @@ serve(async (req: Request) => {
 
     // 构建完整的文件路径，相对于 localFileRoot
     let fullPath = join(localFileRoot, filePath);
-
     // 防止路径遍历攻击
     if (!fullPath.startsWith(localFileRoot)) {
       return new Response("Forbidden", { status: 403 });
@@ -52,7 +53,6 @@ serve(async (req: Request) => {
     try {
       // 尝试获取文件信息
       const stat = await Deno.stat(fullPath);
-
       if (stat.isDirectory) {
         // 如果请求的是一个目录，尝试提供目录下的 index.html
         const indexPath = join(fullPath, "index.html");
