@@ -33,7 +33,7 @@ jobs:
         run: "uv run mkdocs build"
 
       - name: Copy files
-        run: "find site/ -mindepth 1 -maxdepth 1 ! -name wave -exec mv -t site/wave/ {} + && mv scripts/main.ts site/main.ts"
+        run: "mkdir -p site/wave && find site/ -mindepth 1 -maxdepth 1 ! -name wave -exec mv -t site/wave/ {} + && mv scripts/main.ts site/main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
