@@ -15,16 +15,25 @@
 #### 1.0.1 Dev-SideCar
 
 下载链接：<https://github.com/docmirror/dev-sidecar/releases>
+下载完后运行 按照指引 安装根证书即可.
+
 卸载与恢复：<https://github.com/docmirror/dev-sidecar/blob/master/doc/recover.md>
 
 #### 1.0.2 使用镜像源
 
+##### Github镜像源
 ```bash
 git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 ```
+- 文中`https://bgithub.xyz`为镜像源网址 如该镜像失效 请替换为其他镜像站
+- 请在Github Desktop安装完成(1.1.2步完成)后进行操作.
 > 不可对Git镜像源进行push. 如需push 请恢复原有设置：
 >
 > `git config --global --unset url.https://bgithub.xyz.insteadof`
+##### PyPi镜像源
+> 此处内容仅适用于uv
+
+将值为`https://mirrors.aliyun.com/pypi/simple/`的环境变量`UV_INDEX`添加进系统即可
 
 #### 1.0.3 科学上网
 
@@ -72,7 +81,7 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
     第二栏点击右侧`Choose`按钮以选择一个你希望存放仓库的文件夹
     ![](/images/how2contribute/ghdesktop_clone.webp)
     最后点击Clone 等待下图界面出现
-    ![](/images/how2contribute/ghdesktop_repo_main.webp)
+    ![](/images/how2contribute/ghdesktop_repo_latest.webp)
 3. 在上一步最后显示的窗口里按下 <kbd>Ctrl</kbd>+<kbd>`</kbd> 打开终端 输入以下命令：
     ```powershell
     uv venv
@@ -140,3 +149,14 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 如该项不填写 请注释该项(或删掉)
 
 > 目前笔者(Gxxk)还没读懂字段`slug`的作用 有知道的可以在评论区说说吗
+
+## 3. 上传文章
+
+1. 打开Github Desktop 映入眼帘的应该是你的Github仓库页面 如图所示
+    ![](/images/how2contribute/ghdesktop_repo_changed.webp)
+    白色框框标记的位置将会显示你所做的更改 你可以通过简单的鼠标单击 来选择你希望提交的更改
+2. 填写左下角的`Summary`与`Description`
+    - Summary: 你这次贡献大致做了什么 简短描述
+    - Description: 你这次贡献的详细描述 可写可不写
+2. 点击`Pull`按钮
+3. 点击`Commit`按钮

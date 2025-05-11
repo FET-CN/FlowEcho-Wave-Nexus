@@ -5,3 +5,7 @@ authors:
         avatar: ./images/can1425.png         # Author avatar
         # slug: url           # Author profile slug
         url: https://can1425.flowecho.org   # Author website URL
+    Frez79:
+        name: Frez79        # Author name
+        description: 马甲Gxxk_、中央决策小组成员 # Author description
+        avatar: ./images/frez79.png         # Author avatar
