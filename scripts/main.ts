@@ -125,7 +125,7 @@ serve(async (req: Request) => {
   } else {
     // 如果不以 "/wave/" 开头，则反向代理到 flowecho-site.deno.dev
     const proxyUrl = new URL(req.url);
-    proxyUrl.host = "flowecho-site.deno.dev";
+    proxyUrl.host = "website-sage-two-36.vercel.app";
     proxyUrl.protocol = "https"; // 或者根据目标网站的协议设置
 
     // 复制原始请求的所有头部信息
