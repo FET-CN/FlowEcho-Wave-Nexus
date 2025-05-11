@@ -15,21 +15,30 @@
 #### 1.0.1 Dev-SideCar
 
 下载链接：<https://github.com/docmirror/dev-sidecar/releases>
+下载完后运行 按照指引 安装根证书即可.
+
 卸载与恢复：<https://github.com/docmirror/dev-sidecar/blob/master/doc/recover.md>
 
 #### 1.0.2 使用镜像源
 
+##### Github镜像源
 ```bash
 git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 ```
+- 文中`https://bgithub.xyz`为镜像源网址 如该镜像失效 请替换为其他镜像站
+- 请在Github Desktop安装完成(1.1.2步完成)后进行操作.
 > 不可对Git镜像源进行push. 如需push 请恢复原有设置：
 >
 > `git config --global --unset url.https://bgithub.xyz.insteadof`
+##### PyPi镜像源
+> 此处内容仅适用于uv
+
+将值为`https://mirrors.aliyun.com/pypi/simple/`的环境变量`UV_INDEX`添加进系统即可
 
 #### 1.0.3 科学上网
 
 此方法不便描述 请自行搜索.
-> Gxxk(笔者)留：是的 这一块只是为了让你知道有这么一个方法在这
+> Frez79(笔者)留：是的 这一块只是为了让你知道有这么一个方法在这
 
 ### 1.1 Git/Github配置
 
@@ -45,13 +54,13 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 
 1. 访问<https://desktop.github.com/download/> 点击图中包含`Download`字样的白色按钮以下载
 2. 运行下载下来的文件 在经过非常短的安装后将会弹出如下界面：
-    ![](/images/how2contribute/ghdesktop_welcomeui.webp)
+    ![](../images/how2contribute/ghdesktop_welcomeui.webp)
 3. 点击`Sign in to Github.com` 在新打开的浏览器网页中 点击`Continue`
-    ![](/images/how2contribute/gh_selectuser.webp)
+    ![](../images/how2contribute/gh_selectuser.webp)
 4. 在跳转到的授权页面中 点击`Authorize desktop`按钮
-    ![](/images/how2contribute/gh_auth.webp)
+    ![](../images/how2contribute/gh_auth.webp)
 5. 此时授权完成 回到`Github Desktop` 会进入如下图所示的界面 勾选`Use my`开头的选项后再点击蓝色`Finish`按钮即可
-    ![](/images/how2contribute/ghdesktop_config.webp)
+    ![](../images/how2contribute/ghdesktop_config.webp)
 
 ### 1.2 Python/mkdocs环境配置
 
@@ -70,9 +79,9 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 2. 打开Github Desktop 点击左侧`Clone`开头的按钮 在新弹出的窗口中选择`URL`
     第一栏输入`https://github.com/FET-CN/FlowEcho-Wave-Nexus.git`
     第二栏点击右侧`Choose`按钮以选择一个你希望存放仓库的文件夹
-    ![](/images/how2contribute/ghdesktop_clone.webp)
+    ![](../images/how2contribute/ghdesktop_clone.webp)
     最后点击Clone 等待下图界面出现
-    ![](/images/how2contribute/ghdesktop_repo_main.webp)
+    ![](../images/how2contribute/ghdesktop_repo_latest.webp)
 3. 在上一步最后显示的窗口里按下 <kbd>Ctrl</kbd>+<kbd>`</kbd> 打开终端 输入以下命令：
     ```powershell
     uv venv
@@ -139,4 +148,31 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 ```
 如该项不填写 请注释该项(或删掉)
 
-> 目前笔者(Gxxk)还没读懂字段`slug`的作用 有知道的可以在评论区说说吗
+> 目前笔者({{Frez79.name}})还没读懂字段`slug`的作用 有知道的可以在评论区说说吗
+
+### 2.6 统一个人信息
+
+该项目使用`/dics/blog/.authors.yml`与`/mkdocs.yml`存储博客作者信息与团队成员信息
+我们仅存储您的名字与ID 如果您原意提供更多你的信息 我们也很乐意收下 并在为此项目贡献文章时使用基于ID访问的名称/信息
+
+您可以通过`\{\{作者名(ID标记).name\}\}`来引用作者名字.
+
+您可以通过`\{\{作者名(ID标记).\[对应信息的ID\]\}\}`来引用作者`\[对应信息\]`.
+## 3. 上传文章
+
+> 作为一般用户 您可能没有足够的权限进行push操作 此时 您可以通过 **PR(Pull Request)** 解决这一问题：
+
+> <https://blog.csdn.net/Supreme7/article/details/136813376>
+
+1. 打开Github Desktop 映入眼帘的应该是你的Github仓库页面 如图所示
+    ![](../images/how2contribute/ghdesktop_repo_commit.webp)
+    白色框框标记的位置将会显示你所做的更改 你可以通过简单的鼠标单击 来选择你希望提交的更改
+2. 填写左下角的`Summary`与`Description`
+    - Summary: 你这次贡献大致做了什么 简短描述
+    - Description: 你这次贡献的详细描述 可写可不写
+3. 填写完毕后 点击左下角以`Commit`开头的蓝色按钮 提交更改 此时你刚刚填写的两个字段将会锁定 等待出现如下界面即可
+
+    左下角将会显示您刚刚成功提交的信息 此时点击`Undo`可以撤销提交
+    ![](../images/how2contribute/ghdesktop_repo_commited.webp)
+
+4. 此时 点击右上角带有`Push`字样的按钮即可

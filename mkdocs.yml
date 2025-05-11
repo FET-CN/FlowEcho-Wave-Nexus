@@ -93,12 +93,11 @@ extra:
     gitee: https://gitee.com/Can1425/
   LP:
     name: LP_OVER
-    web: /
     github: https://github.com/LP_OVER/
-  Gxxk:
-    name: Gxxk
-    web: /
+  Frez79:
+    name: Frez79
     github: https://github.com/gxxk-dev/
+    ldo: https://linux.do/u/frez79/
   yishang:
     name: 我叫以赏
     web: https://lovepikachu.top/
@@ -106,16 +105,18 @@ extra:
     gitee: https://gitee.com/wojiaoyishang/
   CycleBai:
     name: Shinplex
-    web: /
     github: https://github.com/Shinplex/
   HowardJones:
     name: Howard Jones
-    web: /
     github: https://github.com/HowardJoness/
   emofalling:
     name: emofalling
-    web: /
     github: https://github.com/emofalling
+  kenny:
+    name: Kenny
+    github: https://github.com/kenny2022enroll
+  rong:
+    name: Rong
   social:
     - icon: material/email
       link: mailto:<can1425@dingtalk.com>

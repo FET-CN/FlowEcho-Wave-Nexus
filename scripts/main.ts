@@ -45,7 +45,6 @@ serve(async (req: Request) => {
 
     // 构建完整的文件路径，相对于 localFileRoot
     let fullPath = join(localFileRoot, filePath);
-
     // 防止路径遍历攻击
     if (!fullPath.startsWith(localFileRoot)) {
       return new Response("Forbidden", { status: 403 });
@@ -54,7 +53,6 @@ serve(async (req: Request) => {
     try {
       // 尝试获取文件信息
       const stat = await Deno.stat(fullPath);
-
       if (stat.isDirectory) {
         // 如果请求的是一个目录，尝试提供目录下的 index.html
         const indexPath = join(fullPath, "index.html");
