@@ -5,7 +5,7 @@ import { extname, join, dirname } from "https://deno.land/std@0.208.0/path/mod.t
 const __dirname = new URL(".", import.meta.url).pathname;
 
 // 本地文件服务的根目录
-const localFileRoot = join(__dirname, "site", "wave");
+const localFileRoot = join(__dirname, "wave");
 
 // 端口号
 const port = 8000;
