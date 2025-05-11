@@ -1,5 +1,9 @@
 site_name: FlowEcho Wave Nexus
 site_description: 这里是 FlowEcho 门户网站。让每一次呐喊都有回声。
+
+use_directory_urls: true
+site_url: https://flowecho.org/wave/
+
 theme:
   name: material
   language: zh
