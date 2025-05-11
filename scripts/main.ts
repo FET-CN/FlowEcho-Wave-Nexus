@@ -5,7 +5,7 @@ import { extname, join, dirname } from "https://deno.land/std@0.208.0/path/mod.t
 const __dirname = new URL(".", import.meta.url).pathname;
 
 // 本地文件服务的根目录
-const localFileRoot = join(__dirname, "site", "wave");
+const localFileRoot = join(__dirname, "wave");
 
 // 端口号
 const port = 8000;
@@ -44,6 +44,8 @@ serve(async (req: Request) => {
     // 构建完整的文件路径，相对于 localFileRoot
     let fullPath = join(localFileRoot, filePath);
 
+    console.log("pathname: " + pathname + ", local file: " + fullPath)
+
     // 防止路径遍历攻击
     if (!fullPath.startsWith(localFileRoot)) {
       return new Response("Forbidden", { status: 403 });
@@ -52,7 +54,6 @@ serve(async (req: Request) => {
     try {
       // 尝试获取文件信息
       const stat = await Deno.stat(fullPath);
-
       if (stat.isDirectory) {
         // 如果请求的是一个目录，尝试提供目录下的 index.html
         const indexPath = join(fullPath, "index.html");
