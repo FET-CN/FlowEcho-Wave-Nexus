@@ -152,11 +152,18 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 
 ## 3. 上传文章
 
+> 作为一般用户 您可能没有足够的权限进行push操作 此时 您可以通过 **PR(Pull Request)** 解决这一问题：
+> <https://blog.csdn.net/Supreme7/article/details/136813376>
+
 1. 打开Github Desktop 映入眼帘的应该是你的Github仓库页面 如图所示
-    ![](/images/how2contribute/ghdesktop_repo_changed.webp)
+    ![](/images/how2contribute/ghdesktop_repo_commit.webp)
     白色框框标记的位置将会显示你所做的更改 你可以通过简单的鼠标单击 来选择你希望提交的更改
 2. 填写左下角的`Summary`与`Description`
     - Summary: 你这次贡献大致做了什么 简短描述
     - Description: 你这次贡献的详细描述 可写可不写
-2. 点击`Pull`按钮
-3. 点击`Commit`按钮
+3. 填写完毕后 点击左下角以`Commit`开头的蓝色按钮 提交更改 此时你刚刚填写的两个字段将会锁定 等待出现如下界面即可
+
+    左下角将会显示您刚刚成功提交的信息 此时点击`Undo`可以撤销提交
+    ![](/images/how2contribute/ghdesktop_repo_commited.webp)
+
+4. 此时 点击右上角带有`Push`字样的按钮即可
