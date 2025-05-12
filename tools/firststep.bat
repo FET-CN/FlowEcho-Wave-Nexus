@@ -1,3 +1,4 @@
+:: coding:utf-8
 :: 加入进FET-WN的共建前请运行此文件
 
 @echo off
