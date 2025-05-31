@@ -4,13 +4,16 @@ authors:
         description: FlowEcho 创始人、中央决策小组成员 # Author description
         avatar: ./images/can1425.webp         # Author avatar
         # slug: url           # Author profile slug
-        url: https://can1425.flowecho.org   # Author website URL
+        #url: https://can1425.flowecho.org   # Author website URL
     Frez79:
         name: Frez79
-        description: 别名Gxxk 一名想当全栈程序员的学生
+        description: 别名Gxxk FET早期/中央决策小组成员
         avatar: ./images/frez79.webp
     LP_OVER:
         name: LP_OVER        # Author name
         description: FlowEcho早期成员、中央决策小组成员 # Author description
         avatar: ./images/LP_OVER.webp         # Author avatar
-
+    emofalling:
+        name: emofalling
+        description: 该成员未提供个人简介
+        avatar: ./images/emofalling.webp
