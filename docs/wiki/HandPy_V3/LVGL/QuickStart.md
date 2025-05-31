@@ -1,4 +1,8 @@
 # 快速上手
+
+!!! note
+    此文档仍在施工中...
+
 让我们从一个官方示例开始:
 ```python
 import lvgl as lv
