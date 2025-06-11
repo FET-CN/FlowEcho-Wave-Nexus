@@ -31,6 +31,12 @@ serve(async (req: Request) => {
   const url = new URL(req.url);
   const pathname = url.pathname;
 
+  // 处理百度验证文件：baidu_verify_codeva-ocVBwmPkny.html
+  if (pathname === "/baidu_verify_codeva-ocVBwmPkny.html") {
+    return new Response("9ac3e638e043cfa318e90de62d1ec326", { status: 200 });
+    // 硬编码是坏文明 但是我喜欢（
+  }
+
   // 检查路径是否以 "/wave/" 开头
   if (pathname.startsWith("/wave/")) {
     // 如果以 "/wave/" 开头，则提供本地文件
@@ -39,11 +45,6 @@ serve(async (req: Request) => {
     // 处理根路径 "/" 的情况，默认提供 index.html
     if (filePath === "" || filePath === "/") {
       filePath = "/index.html";
-    }
-
-    // 处理文件 百度验证：baidu_verify_codeva-ocVBwmPkny.html
-    if (filePath === "/baidu_verify_codeva-ocVBwmPkny.html") {
-      filePath = "/baidu_verify_codeva-ocVBwmPkny.html";
     }
 
     // 构建完整的文件路径，相对于 localFileRoot
