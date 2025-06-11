@@ -41,6 +41,11 @@ serve(async (req: Request) => {
       filePath = "/index.html";
     }
 
+    // 处理文件 百度验证：baidu_verify_codeva-ocVBwmPkny.html
+    if (filePath === "/baidu_verify_codeva-ocVBwmPkny.html") {
+      filePath = "/baidu_verify_codeva-ocVBwmPkny.html";
+    }
+
     // 构建完整的文件路径，相对于 localFileRoot
     let fullPath = join(localFileRoot, filePath);
 
