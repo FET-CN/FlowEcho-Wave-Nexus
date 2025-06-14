@@ -4,12 +4,12 @@
 
 ### 1.创始人Can1425建立FlowEcho
 
-W-Can1425(https://github.com/Can1425/) 于 2023-1-18 在钉钉内创建了一个名为“掌控板讨论群”的群,并在盛思官网发布了入群的二维码,在一段时间后, 团队里有四人，分别为:Can1425,Frez79_,Kenny和LP_OVER
+{{Can1425.name}}(<https://github.com/Can1425/>) 于 2023-1-18 在钉钉内创建了一个名为“掌控板讨论群”的群,并在盛思官网发布了入群的二维码,在一段时间后, 团队里有四人，分别为:{{Can1425.name}},{{Frez79.name}},{{Kenny.name}}和{{LP.name}}
 > 早期FlowEcho称为掌控板讨论群
 
 ### 2.第一次群组改革
 
-在一段时间之后，由于群内多为开发handpy/mpython UI/OS的开发者，群名称变为了**System Team for mPython**（缩写为"STFP"）。同时，为了部分信息保密及方便交流，*Can1425*创建了 **STFP 中央决策小组** 便于交流与沟通
+在一段时间之后，由于群内多为开发handpy/mpython UI/OS的开发者，群名称变为了**System Team for mPython**（缩写为"STFP"）。同时，为了部分信息保密及方便交流，*{{Can1425.name}}*创建了 **STFP 中央决策小组** 便于交流与沟通
 
 ### 3.成员的扩张
 

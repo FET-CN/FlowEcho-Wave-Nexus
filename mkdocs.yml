@@ -96,6 +96,8 @@ extra:
     github: https://github.com/LP_OVER/
   Frez79:
     name: Frez79
+    aliasname: Gxxk
+    realname: 欧阳泓骞
     github: https://github.com/gxxk-dev/
     ldo: https://linux.do/u/frez79/
   yishang:
@@ -145,6 +147,7 @@ nav:
           - "wiki/HandPy_V3/LVGL/QuickStart.md"
           - "wiki/HandPy_V3/LVGL/align.md"
       - "wiki/How2Contribute.md"
+      - "wiki/DifficultCases.md"
   - 历史资料:
       - history/index.md
   - 讨论:

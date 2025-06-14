@@ -8,7 +8,7 @@ authors:
 # \[88掌控日文字稿\]简析掌控板 3.0 屏幕技术更新：从framebuf到LVGL
 
 > PPT：<https://ouyhq.lanzoum.com/iQ4i22xqm72d>         密码:dyoh
-> 本文字稿 以 CC BY-NC-SA 4.0 协议贡献 署名为Frez79(欧阳泓骞)
+> 本文字稿 以 CC BY-NC-SA 4.0 协议贡献 署名为{{Frez79.name}}({{Frez79.realname}})
 
 # 开场白
 

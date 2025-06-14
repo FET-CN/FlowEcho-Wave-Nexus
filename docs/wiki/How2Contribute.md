@@ -36,7 +36,7 @@ git config --global url."https://bgithub.xyz".insteadOf "https://github.com"
 #### 1.0.3 科学上网
 
 此方法不便描述 请自行搜索.
-> Frez79(笔者)留：是的 这一块只是为了让你知道有这么一个方法在这
+> {{Frez79.name}}(笔者)留：是的 这一块只是为了让你知道有这么一个方法在这
 
 ### 1.1 Git/Github配置
 
