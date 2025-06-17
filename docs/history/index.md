@@ -4,7 +4,7 @@
 
 ### 1.创始人Can1425建立FlowEcho
 
-{{Can1425.name}}(<https://github.com/Can1425/>) 于 2023-1-18 在钉钉内创建了一个名为“掌控板讨论群”的群,并在盛思官网发布了入群的二维码,在一段时间后, 团队里有四人，分别为:{{Can1425.name}},{{Frez79.name}},{{Kenny.name}}和{{LP.name}}
+{{Can1425.name}}(<https://github.com/Can1425/>) 于 2023-1-18 在钉钉内创建了一个名为“掌控板讨论群”的群,并在盛思官网发布了入群的二维码,在一段时间后, 团队里有四人，分别为:{{Can1425.name}},{{Frez79.name}},{{kenny.name}}和{{LP.name}}
 > 早期FlowEcho称为掌控板讨论群
 
 ### 2.第一次群组改革
