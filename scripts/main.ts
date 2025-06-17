@@ -1,9 +1,9 @@
 import { serve } from "https://deno.land/std@0.208.0/http/server.ts";
-import { extname, join, dirname } from "https://deno.land/std@0.208.0/path/mod.ts";
+import { extname, join } from "https://deno.land/std@0.208.0/path/mod.ts";
 
 const __dirname = new URL(".", import.meta.url).pathname;
 const localFileRoot = join(__dirname, "wave");
-const port = 8080;
+const port = 8000;
 
 const mimeTypes: { [key: string]: string } = {
   ".html": "text/html",
